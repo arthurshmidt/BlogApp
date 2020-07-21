@@ -4,6 +4,12 @@ from flask import Flask, render_template
 # create the application object
 app = Flask(__name__)
 
+def read_post(blogfile):
+    with open(blogfile,"r") as file:
+        blog_md = file.read()
+
+    return blog_md
+
 # use decorators to link the function to a url
 @app.route('/')
 def home():
