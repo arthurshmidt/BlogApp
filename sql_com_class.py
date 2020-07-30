@@ -56,7 +56,8 @@ class database:
 
     # returns the contents (tuple) of a table 
     def returnTableValues(self):
-        continue
+        # Need to complete
+        a = 2
 
 if __name__ == "__main__":
     # testing of the database class
