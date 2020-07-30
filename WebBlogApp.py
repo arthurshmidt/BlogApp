@@ -2,8 +2,9 @@
 from flask import Flask, render_template
 import os
 import markdown
+import sql_comm_class
 
-# create the application object
+# create global application objects
 app = Flask(__name__)
 
 # reads in a file and returns the text
