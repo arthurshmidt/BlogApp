@@ -56,8 +56,7 @@ class database:
 
     # returns the contents (tuple) of a table 
     def returnTableValues(self):
-        # Need to complete
-        a = 2
+        print("Code needs to be completed for returnTableValues()")
 
 if __name__ == "__main__":
     # testing of the database class
@@ -65,11 +64,13 @@ if __name__ == "__main__":
     # test connection to database and the instertion of a post
     data = database()
     data.connect()
-    data.addTable("D2020_07_28")
-    summary_post = "This summary post is test my sql database entry and retrieval"
-    body_post = "This text is meant to represent the body of the blog post.  Yay!!!!!.  Better than Lorem Ipsum -> These are the voyages of the starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before"
-    data.addData("D2020_07_23", summary_post, body_post)
-    print("Entered Data into sql")
+    
+    # Test Entering data into sql
+    #data.addTable("D2020_07_28")
+    #summary_post = "This summary post is test my sql database entry and retrieval"
+    #body_post = "This text is meant to represent the body of the blog post.  Yay!!!!!.  Better than Lorem Ipsum -> These are the voyages of the starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before"
+    #data.addData("D2020_07_23", summary_post, body_post)
+    #print("Entered Data into sql")
 
     # retrieve and display blog posts from sql
     tables_list = data.returnTables()

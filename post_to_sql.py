@@ -23,8 +23,9 @@ def menu(current_file,current_date,current_summary):
     print("1. Enter file name.")
     print("2. Enter date.")
     print("3. Enter summary.")
-    print("4. Read in mardown.")
-    print("5. Quit.\n")
+    print("4. Read in mardown file.")
+    print("5. List existing entries.")
+    print("9. Quit.\n")
     try:
         menu_selection = int(input("Enter selection:> "))
     except:
@@ -68,6 +69,18 @@ def sql_input(current_date,current_summary,markdown_data):
     data.addData(current_date,current_summary,markdown_data)
     data.disconnect()
 
+# Returns an array
+def list_posts():
+    tables_list = []
+    data = sql_com_class.database()
+    data.connect()
+    tables_list = data.returnTables()
+    print("\nList of Current Entries:\n")
+    for i in tables_list:
+        print(i)
+    data.disconnect()
+    _ = input("")
+
 if __name__ == "__main__":
     menu_selection = 0
     current_file = ""
@@ -76,7 +89,7 @@ if __name__ == "__main__":
     markdown_data = ""
 
     clear_screen()
-    while(menu_selection != 5):
+    while(menu_selection != 9):
         clear_screen()
         menu_selection = menu(current_file,current_date,current_summary)
         if menu_selection == 1:
@@ -90,3 +103,5 @@ if __name__ == "__main__":
             print(markdown_data)
             sql_input(current_date,current_summary,markdown_data)
             _ = input("")
+        if menu_selection == 5:
+            list_posts()
