@@ -32,7 +32,7 @@ class database:
 
         """
         d = datetime.datetime.now()
-        new_table = "CREATE TABLE " + date_input + " (Summary LONGTEXT, Post LONGTEXT, data_id INTEGER AUTO_INCREMENT PRIMARY KEY)"
+        new_table = "CREATE TABLE " + date_input + " (Summary LONGTEXT, Post LONGTEXT)"
         self.C.execute(new_table)
 
     def addData(self,table_name,summary_data,post_data):
@@ -55,8 +55,11 @@ class database:
         return tables_list
 
     # returns the contents (tuple) of a table 
-    def returnTableValues(self):
-        print("Code needs to be completed for returnTableValues()")
+    def returnTableValues(self,table_name):
+        self.C.execute("SELECT * FROM "+table_name)
+        myresult = self.C.fetchall()
+
+        return myresult[0]
 
 if __name__ == "__main__":
     # testing of the database class
@@ -74,7 +77,16 @@ if __name__ == "__main__":
 
     # retrieve and display blog posts from sql
     tables_list = data.returnTables()
-    print(tables_list)
+    for i in range(len(tables_list)):
+        table_data = data.returnTableValues(tables_list[i])
+        print("Post Date: {}\n".format(tables_list[i]))
+        print("Summary:")
+        print(table_data[0])
+        print("\nBlog Post:")
+        print(table_data[1])
+    #print("tables_list: {}\n".format(tables_list))
+    #table_data = data.returnTableValues(tables_list[0])
+    #print(table_data)
 
     # close out the connection to database
     data.disconnect()

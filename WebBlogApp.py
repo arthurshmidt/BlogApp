@@ -2,7 +2,7 @@
 from flask import Flask, render_template
 import os
 import markdown
-import sql_comm_class
+import sql_com_class
 
 # create global application objects
 app = Flask(__name__)
@@ -13,6 +13,16 @@ def read_post(blogfile):
         blog_md = file.read()
 
     return blog_md
+
+# read sql files into array of tuples
+def read_sql_posts():
+    print("Need to complete read_sql_posts()")
+    table_names = []
+    data = sql_com_class.database()
+    data.connect()
+    table_names = data.returnTables()
+    
+    data.disconnect()
 
 # converts a markdown string into html
 def md_html(blogfile):
@@ -32,15 +42,20 @@ def read_files(posts_path):
 @app.route('/')
 def home():
     
-    posts_folder = "posts/"
     posts_div_head = '<div class="blog-post">'
-    posts_div_tail = '</div>'
-    blog_files = read_files(posts_folder)
+    posts_div_tail = '</div><hr>'
     blog_post = ""
-    for i in blog_files:
+
+    data = sql_com_class.database()
+    data.connect()
+
+    tables_list = data.returnTables()
+    for i in range(len(tables_list)):
+        table_data = data.returnTableValues(tables_list[i])
         blog_post += posts_div_head
-        blog_post += md_html(posts_folder+i)
+        blog_post += md_html(table_data[1])
         blog_post += posts_div_tail
+
     return render_template("index.html",blog_post=blog_post)
 
 @app.route('/about')
