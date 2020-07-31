@@ -14,17 +14,21 @@ import os
 def clear_screen():
     _ = os.system("clear")
 
-def menu(current_file,current_date,current_summary):
+def menu(file_name,table_name,post_date,post_title,post_summary):
     menu_selection = 0
 
-    print("Current file: {}".format(current_file))
-    print("Current date: {}\n".format(current_date))
-    print("Current summary: \n{}\n".format(current_summary))
+    print("File Name: {}".format(file_name))
+    print("Table name: {}".format(table_name))
+    print("Post date: {}".format(post_date))
+    print("Post title: {}".format(post_title))
+    print("Post summary: \n{}\n".format(post_summary))
     print("1. Enter file name.")
-    print("2. Enter date.")
-    print("3. Enter summary.")
-    print("4. Read in mardown file.")
-    print("5. List existing entries.")
+    print("2. Enter table name (P200723)")
+    print("3. Enter post date.")
+    print("4. Enter post title.")
+    print("5. Enter post summary.")
+    print("6. Read in mardown file.")
+    print("7. List existing entries.")
     print("9. Quit.\n")
     try:
         menu_selection = int(input("Enter selection:> "))
@@ -35,20 +39,34 @@ def menu(current_file,current_date,current_summary):
 
 def enter_file():
     try:
-        file_name = input("Enter File Name:> ")
+        file_name = input("Enter File Name to be read:> ")
     except:
         _ = input("Please make sure you entered a string.")
     return file_name
 
+def enter_tablename():
+    try:
+        table_name = input("Enter table name:> ")
+    except:
+        _ = input("Please make sure you entered a string.")
+    return table_name
+
 def enter_date():
     try:
-        date_name = input("Enter date:> ")
+        date_name = input("Enter post date:> ")
     except:
         _ = input("Please make sure you entered a string.")
     return date_name
 
+def enter_title():
+    try:
+        post_title = input("Enter post title:> ")
+    except:
+        _ = input("Please make sure you entered a string.")
+    return post_title
+
 def enter_summary():
-    current_summary = input("Enter blog summary:\n\n")
+    current_summary = input("Enter blog post summary:\n\n")
     return current_summary
 
 def read_markdown(current_file):
@@ -62,11 +80,11 @@ def read_markdown(current_file):
         _ = input("")
     return md_data
 
-def sql_input(current_date,current_summary,markdown_data):
+def sql_input(table_name,post_date,post_title,post_summary,markdown_data):
     data = sql_com_class.database()
     data.connect()
-    data.addTable(current_date)
-    data.addData(current_date,current_summary,markdown_data)
+    data.addTable(table_name)
+    data.addData(table_name,post_date,post_title,post_summary,markdown_data)
     data.disconnect()
 
 # Returns an array
@@ -83,25 +101,31 @@ def list_posts():
 
 if __name__ == "__main__":
     menu_selection = 0
-    current_file = ""
-    current_date = ""
-    current_summary = ""
+    file_name = ""
+    table_name = ""
+    post_date = ""
+    post_title = ""
+    post_summary = ""
     markdown_data = ""
 
     clear_screen()
     while(menu_selection != 9):
         clear_screen()
-        menu_selection = menu(current_file,current_date,current_summary)
+        menu_selection = menu(file_name,table_name,post_date,post_title,post_summary)
         if menu_selection == 1:
-            current_file = enter_file()
+            file_name = enter_file()
         if menu_selection == 2:
-            current_date = enter_date()
+            table_name = enter_tablename()
         if menu_selection == 3:
-            current_summary = enter_summary()
-        if menu_selection == 4: 
-            markdown_data = read_markdown(current_file)
-            print(markdown_data)
-            sql_input(current_date,current_summary,markdown_data)
-            _ = input("")
+            post_date = enter_date()
+        if menu_selection == 4:
+            post_title = enter_title()
         if menu_selection == 5:
+            post_summary = enter_summary()
+        if menu_selection == 6: 
+            markdown_data = read_markdown(file_name)
+            print(markdown_data)
+            sql_input(table_name,post_date,post_title,post_summary,markdown_data)
+            _ = input("")
+        if menu_selection == 7:
             list_posts()

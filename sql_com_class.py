@@ -25,19 +25,19 @@ class database:
             )
         self.C = self.conn.cursor()
 
-    def addTable(self,date_input):
+    def addTable(self,table_name):
         """
 
-        Basic table layout: (name of table) = date -> summary, post, unique ID
+        Basic table layout: (name of table) = P200723 -> date, title, summary, post
 
         """
         d = datetime.datetime.now()
-        new_table = "CREATE TABLE " + date_input + " (Summary LONGTEXT, Post LONGTEXT)"
+        new_table = "CREATE TABLE " + table_name + " (Date LONGTEXT, Title LONGTEXT, Summary LONGTEXT, Post LONGTEXT)"
         self.C.execute(new_table)
 
-    def addData(self,table_name,summary_data,post_data):
-        sql_entry_data = "INSERT INTO " + table_name + " (Summary, Post) VALUES (%s, %s)"
-        val = (summary_data,post_data)
+    def addData(self,table_name,post_date,post_title,post_summary,post_data):
+        sql_entry_data = "INSERT INTO " + table_name + " (Date, Title, Summary, Post) VALUES (%s, %s, %s, %s)"
+        val = (post_date, post_title, post_summary, post_data)
         self.C.execute(sql_entry_data, val)
         self.conn.commit()
 

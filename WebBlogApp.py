@@ -7,27 +7,10 @@ import sql_com_class
 # create global application objects
 app = Flask(__name__)
 
-# reads in a file and returns the text
-def read_post(blogfile):
-    with open(blogfile,"r") as file:
-        blog_md = file.read()
-
-    return blog_md
-
-# read sql files into array of tuples
-def read_sql_posts():
-    print("Need to complete read_sql_posts()")
-    table_names = []
-    data = sql_com_class.database()
-    data.connect()
-    table_names = data.returnTables()
-    
-    data.disconnect()
 
 # converts a markdown string into html
-def md_html(blogfile):
+def md_html(blog_md):
     md = markdown.Markdown()
-    blog_md = read_post(blogfile)
     blog_html = md.convert(blog_md)
 
     return blog_html
@@ -53,7 +36,7 @@ def home():
     for i in range(len(tables_list)):
         table_data = data.returnTableValues(tables_list[i])
         blog_post += posts_div_head
-        blog_post += md_html(table_data[1])
+        blog_post += md_html(table_data[3])
         blog_post += posts_div_tail
 
     return render_template("index.html",blog_post=blog_post)
