@@ -21,6 +21,19 @@ def read_files(posts_path):
 
     return blog_files
 
+def create_summary_post(table_data):
+    blog_post = ''
+    meta_tag_start = '<p class="blog-post-meta">'
+    meta_tag_end = '</p>'
+    post_title_start = '<h1 class="blog-post-title">'
+    post_title_end = '</h1>'
+
+    blog_post = post_title_start + table_data[1] + post_title_end
+    blog_post += meta_tag_start + table_data[0] + meta_tag_end
+    blog_post += md_html(table_data[2])
+
+    return blog_post
+
 # use decorators to link the function to a url
 @app.route('/')
 def home():
@@ -36,7 +49,7 @@ def home():
     for i in range(len(tables_list)):
         table_data = data.returnTableValues(tables_list[i])
         blog_post += posts_div_head
-        blog_post += md_html(table_data[3])
+        blog_post += create_summary_post(table_data)
         blog_post += posts_div_tail
 
     return render_template("index.html",blog_post=blog_post)

@@ -18,8 +18,8 @@ class database:
 
     def connect(self):
         self.conn = mariadb.connect(
-            user="root",
-            password="password",
+            user="blog",
+            password="blog",
             host="localhost",
             database="blog_posts"
             )
