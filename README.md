@@ -14,7 +14,7 @@ Install Flask
 
 Install mod_wsgi
 
-	$ apt-get install libapache2-mod-wsgi
+	$ apt-get install libapache2-mod-wsgi-py3
 
 Add wsgi to virtual host
 
