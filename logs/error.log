@@ -244,3 +244,514 @@
 [Sun Aug 02 19:02:09.590361 2020] [wsgi:error] [pid 2818:tid 139868109874944] [remote 15.165.47.205:52910]   File "/var/www/FLASKAPPS/BlogApp/sql_com_class.py", line 2, in <module>
 [Sun Aug 02 19:02:09.590384 2020] [wsgi:error] [pid 2818:tid 139868109874944] [remote 15.165.47.205:52910]     import mariadb
 [Sun Aug 02 19:02:09.590415 2020] [wsgi:error] [pid 2818:tid 139868109874944] [remote 15.165.47.205:52910] ImportError: No module named 'mariadb'
+[Thu Aug 06 12:39:06.790190 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212] mod_wsgi (pid=508): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 12:39:06.809926 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212] mod_wsgi (pid=508): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 12:39:06.810171 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212] Traceback (most recent call last):
+[Thu Aug 06 12:39:06.810198 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 12:39:06.810204 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 12:39:06.810211 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 4, in <module>
+[Thu Aug 06 12:39:06.810216 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212]     import markdown
+[Thu Aug 06 12:39:06.810231 2020] [wsgi:error] [pid 508:tid 139981957244672] [remote 172.58.190.235:51212] ModuleNotFoundError: No module named 'markdown'
+[Thu Aug 06 12:41:44.667006 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 12:41:44.667053 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 12:41:44.667261 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008] Traceback (most recent call last):
+[Thu Aug 06 12:41:44.667286 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 12:41:44.667292 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 12:41:44.667300 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 12:41:44.667304 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008]     import sql_com_class
+[Thu Aug 06 12:41:44.667319 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 172.58.190.235:35008] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 12:49:57.431101 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 12:49:57.431176 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 12:49:57.431313 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200] Traceback (most recent call last):
+[Thu Aug 06 12:49:57.431366 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 12:49:57.431379 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 12:49:57.431394 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 12:49:57.431417 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200]     import sql_com_class
+[Thu Aug 06 12:49:57.431448 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:55200] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 14:12:53.694261 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 14:12:53.694330 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 14:12:53.694459 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318] Traceback (most recent call last):
+[Thu Aug 06 14:12:53.694508 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 14:12:53.694520 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 14:12:53.694535 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 14:12:53.694544 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318]     import sql_com_class
+[Thu Aug 06 14:12:53.694574 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 71.6.232.9:56318] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 14:24:36.529205 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 14:24:36.529274 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 14:24:36.529401 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892] Traceback (most recent call last):
+[Thu Aug 06 14:24:36.529450 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 14:24:36.529462 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 14:24:36.529477 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 14:24:36.529486 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892]     import sql_com_class
+[Thu Aug 06 14:24:36.529515 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 128.14.209.242:55892] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 14:39:36.021212 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 14:39:36.021278 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 14:39:36.021404 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614] Traceback (most recent call last):
+[Thu Aug 06 14:39:36.021452 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 14:39:36.021464 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 14:39:36.021479 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 14:39:36.021501 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614]     import sql_com_class
+[Thu Aug 06 14:39:36.021531 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62614] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:02:45.846158 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:02:45.846228 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:02:45.846352 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870] Traceback (most recent call last):
+[Thu Aug 06 15:02:45.846399 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:02:45.846412 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:02:45.846426 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:02:45.846435 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870]     import sql_com_class
+[Thu Aug 06 15:02:45.846464 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 195.54.160.21:44870] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:14:00.668916 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:14:00.668983 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:14:00.669104 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098] Traceback (most recent call last):
+[Thu Aug 06 15:14:00.669152 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:14:00.669164 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:14:00.669179 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:14:00.669188 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098]     import sql_com_class
+[Thu Aug 06 15:14:00.669216 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:38098] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:14:00.726697 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:14:00.726749 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:14:00.726861 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865] Traceback (most recent call last):
+[Thu Aug 06 15:14:00.726908 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:14:00.726920 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:14:00.726935 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:14:00.726957 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865]     import sql_com_class
+[Thu Aug 06 15:14:00.726985 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:49865] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:29:02.593610 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:29:02.593678 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:29:02.593804 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800] Traceback (most recent call last):
+[Thu Aug 06 15:29:02.593852 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:29:02.593864 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:29:02.593879 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:29:02.593888 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800]     import sql_com_class
+[Thu Aug 06 15:29:02.593917 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 109.94.116.107:53800] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:32:37.037436 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:32:37.037497 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:32:37.037614 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151] Traceback (most recent call last):
+[Thu Aug 06 15:32:37.037661 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:32:37.037673 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:32:37.037687 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:32:37.037696 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151]     import sql_com_class
+[Thu Aug 06 15:32:37.037723 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.185.97.144:51151] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:32:37.102873 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:32:37.102924 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:32:37.103033 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585] Traceback (most recent call last):
+[Thu Aug 06 15:32:37.103080 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:32:37.103092 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:32:37.103107 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:32:37.103131 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585]     import sql_com_class
+[Thu Aug 06 15:32:37.103159 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.185.97.144:40585] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 15:54:05.441911 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:54:05.441981 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 15:54:05.442110 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774] Traceback (most recent call last):
+[Thu Aug 06 15:54:05.442159 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 15:54:05.442171 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 15:54:05.442186 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 15:54:05.442195 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774]     import sql_com_class
+[Thu Aug 06 15:54:05.442224 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 37.49.224.168:49774] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:03:47.977318 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:03:47.977382 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:03:47.977498 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516] Traceback (most recent call last):
+[Thu Aug 06 16:03:47.977546 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:03:47.977558 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:03:47.977573 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:03:47.977582 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516]     import sql_com_class
+[Thu Aug 06 16:03:47.977609 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 88.135.80.191:3516] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:19:47.663308 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:19:47.663381 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:19:47.663511 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469] Traceback (most recent call last):
+[Thu Aug 06 16:19:47.663559 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:19:47.663571 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:19:47.663586 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:19:47.663609 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469]     import sql_com_class
+[Thu Aug 06 16:19:47.663639 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 80.82.78.85:60469] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:22:30.744153 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:22:30.744215 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:22:30.744330 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024] Traceback (most recent call last):
+[Thu Aug 06 16:22:30.744377 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:22:30.744389 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:22:30.744404 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:22:30.744413 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024]     import sql_com_class
+[Thu Aug 06 16:22:30.744440 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 138.255.12.45:59024] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:30:13.555631 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:30:13.555695 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:30:13.555835 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716] Traceback (most recent call last):
+[Thu Aug 06 16:30:13.555885 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:30:13.555897 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:30:13.555912 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:30:13.555921 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716]     import sql_com_class
+[Thu Aug 06 16:30:13.555948 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 177.38.1.13:41716] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:25.088996 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:25.089067 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:25.089196 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776] Traceback (most recent call last):
+[Thu Aug 06 16:46:25.089244 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:25.089255 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:25.089270 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:25.089279 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776]     import sql_com_class
+[Thu Aug 06 16:46:25.089326 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:38776] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:25.532013 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:25.532063 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:25.532173 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210] Traceback (most recent call last):
+[Thu Aug 06 16:46:25.532218 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:25.532230 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:25.532243 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:25.532252 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210]     import sql_com_class
+[Thu Aug 06 16:46:25.532277 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39210] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:25.960269 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:25.960319 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:25.960429 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654] Traceback (most recent call last):
+[Thu Aug 06 16:46:25.960473 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:25.960484 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:25.960499 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:25.960507 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654]     import sql_com_class
+[Thu Aug 06 16:46:25.960532 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:39654] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:26.401480 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:26.401534 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:26.401645 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974] Traceback (most recent call last):
+[Thu Aug 06 16:46:26.401690 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:26.401701 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:26.401715 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:26.401724 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974]     import sql_com_class
+[Thu Aug 06 16:46:26.401764 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:39974] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:26.844257 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:26.844307 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:26.844416 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430] Traceback (most recent call last):
+[Thu Aug 06 16:46:26.844462 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:26.844473 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:26.844486 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:26.844494 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430]     import sql_com_class
+[Thu Aug 06 16:46:26.844520 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:40430] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:27.302394 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:27.302448 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:27.302559 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766] Traceback (most recent call last):
+[Thu Aug 06 16:46:27.302604 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:27.302615 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:27.302629 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:27.302638 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766]     import sql_com_class
+[Thu Aug 06 16:46:27.302664 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:40766] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:27.735410 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:27.735460 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:27.735570 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154] Traceback (most recent call last):
+[Thu Aug 06 16:46:27.735614 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:27.735625 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:27.735639 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:27.735648 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154]     import sql_com_class
+[Thu Aug 06 16:46:27.735686 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:41154] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:28.176137 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:28.176191 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:28.176301 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686] Traceback (most recent call last):
+[Thu Aug 06 16:46:28.176347 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:28.176358 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:28.176372 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:28.176380 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686]     import sql_com_class
+[Thu Aug 06 16:46:28.176405 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 122.51.15.207:41686] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:46:28.784842 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:28.784892 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:46:28.785003 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120] Traceback (most recent call last):
+[Thu Aug 06 16:46:28.785048 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:46:28.785059 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:46:28.785072 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:46:28.785081 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120]     import sql_com_class
+[Thu Aug 06 16:46:28.785106 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 122.51.15.207:42120] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 16:54:45.515999 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:54:45.516066 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 16:54:45.516187 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851] Traceback (most recent call last):
+[Thu Aug 06 16:54:45.516242 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 16:54:45.516255 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 16:54:45.516270 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 16:54:45.516279 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851]     import sql_com_class
+[Thu Aug 06 16:54:45.516321 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:53851] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 17:50:08.205477 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 17:50:08.205550 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 17:50:08.205677 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199] Traceback (most recent call last):
+[Thu Aug 06 17:50:08.205724 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 17:50:08.205736 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 17:50:08.205750 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 17:50:08.205759 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199]     import sql_com_class
+[Thu Aug 06 17:50:08.205788 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 185.81.157.189:54199] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 17:59:53.620957 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 17:59:53.621024 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 17:59:53.621142 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538] Traceback (most recent call last):
+[Thu Aug 06 17:59:53.621189 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 17:59:53.621202 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 17:59:53.621216 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 17:59:53.621225 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538]     import sql_com_class
+[Thu Aug 06 17:59:53.621253 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 192.241.232.168:51538] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 19:28:44.385764 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 19:28:44.385835 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 19:28:44.385964 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347] Traceback (most recent call last):
+[Thu Aug 06 19:28:44.386011 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 19:28:44.386023 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 19:28:44.386038 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 19:28:44.386047 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347]     import sql_com_class
+[Thu Aug 06 19:28:44.386093 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 45.7.103.246:33347] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 20:19:20.613233 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:19:20.613305 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:19:20.613434 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357] Traceback (most recent call last):
+[Thu Aug 06 20:19:20.613481 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 20:19:20.613493 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 20:19:20.613508 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 20:19:20.613517 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357]     import sql_com_class
+[Thu Aug 06 20:19:20.613546 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:38357] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 20:19:20.669100 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:19:20.669151 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:19:20.669261 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327] Traceback (most recent call last):
+[Thu Aug 06 20:19:20.669307 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 20:19:20.669319 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 20:19:20.669333 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 20:19:20.669342 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327]     import sql_com_class
+[Thu Aug 06 20:19:20.669368 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:56327] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 20:29:23.390504 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:29:23.390570 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:29:23.390689 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475] Traceback (most recent call last):
+[Thu Aug 06 20:29:23.390736 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 20:29:23.390748 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 20:29:23.390763 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 20:29:23.390772 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475]     import sql_com_class
+[Thu Aug 06 20:29:23.390816 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 35.190.142.196:43475] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 20:29:23.446187 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:29:23.446238 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:29:23.446347 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887] Traceback (most recent call last):
+[Thu Aug 06 20:29:23.446392 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 20:29:23.446403 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 20:29:23.446417 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 20:29:23.446425 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887]     import sql_com_class
+[Thu Aug 06 20:29:23.446451 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 35.190.142.196:53887] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 20:33:50.422141 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:33:50.422206 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 20:33:50.422322 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769] Traceback (most recent call last):
+[Thu Aug 06 20:33:50.422369 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 20:33:50.422381 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 20:33:50.422395 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 20:33:50.422404 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769]     import sql_com_class
+[Thu Aug 06 20:33:50.422432 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 213.95.149.22:38769] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:05:53.399958 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:05:53.400029 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:05:53.400154 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558] Traceback (most recent call last):
+[Thu Aug 06 21:05:53.400202 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:05:53.400214 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:05:53.400229 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:05:53.400237 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558]     import sql_com_class
+[Thu Aug 06 21:05:53.400283 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 196.52.43.66:63558] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:19:26.958601 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:19:26.958673 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:19:26.958802 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837] Traceback (most recent call last):
+[Thu Aug 06 21:19:26.958850 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:19:26.958862 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:19:26.958877 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:19:26.958887 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837]     import sql_com_class
+[Thu Aug 06 21:19:26.958915 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:62837] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:22:28.751785 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:22:28.751848 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:22:28.751962 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195] Traceback (most recent call last):
+[Thu Aug 06 21:22:28.752008 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:22:28.752020 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:22:28.752035 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:22:28.752044 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195]     import sql_com_class
+[Thu Aug 06 21:22:28.752071 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:42195] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:25:40.871803 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:25:40.871868 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:25:40.871992 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900] Traceback (most recent call last):
+[Thu Aug 06 21:25:40.872040 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:25:40.872052 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:25:40.872067 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:25:40.872076 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900]     import sql_com_class
+[Thu Aug 06 21:25:40.872104 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:34900] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:29:02.676259 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:29:02.676323 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:29:02.676439 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152] Traceback (most recent call last):
+[Thu Aug 06 21:29:02.676486 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:29:02.676497 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:29:02.676512 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:29:02.676521 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152]     import sql_com_class
+[Thu Aug 06 21:29:02.676548 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:58152] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:32:13.479550 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:32:13.479616 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:32:13.479740 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283] Traceback (most recent call last):
+[Thu Aug 06 21:32:13.479808 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:32:13.479824 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:32:13.479840 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:32:13.479849 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283]     import sql_com_class
+[Thu Aug 06 21:32:13.479877 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.145:46283] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:33:55.087488 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:33:55.087550 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:33:55.087667 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623] Traceback (most recent call last):
+[Thu Aug 06 21:33:55.087714 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:33:55.087725 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:33:55.087740 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:33:55.087749 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623]     import sql_com_class
+[Thu Aug 06 21:33:55.087794 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:43623] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:33:55.146247 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:33:55.146297 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:33:55.146407 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299] Traceback (most recent call last):
+[Thu Aug 06 21:33:55.146453 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:33:55.146464 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:33:55.146478 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:33:55.146486 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299]     import sql_com_class
+[Thu Aug 06 21:33:55.146511 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:50299] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:42:33.425168 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:42:33.425240 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:42:33.425367 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339] Traceback (most recent call last):
+[Thu Aug 06 21:42:33.425414 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:42:33.425425 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:42:33.425440 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:42:33.425449 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339]     import sql_com_class
+[Thu Aug 06 21:42:33.425478 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 34.74.88.239:54339] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:42:33.486229 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:42:33.486280 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:42:33.486390 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849] Traceback (most recent call last):
+[Thu Aug 06 21:42:33.486436 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:42:33.486448 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:42:33.486463 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:42:33.486472 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849]     import sql_com_class
+[Thu Aug 06 21:42:33.486497 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 34.74.88.239:56849] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 21:51:01.914607 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:51:01.914668 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 21:51:01.914789 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400] Traceback (most recent call last):
+[Thu Aug 06 21:51:01.914835 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 21:51:01.914847 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 21:51:01.914862 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 21:51:01.914871 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400]     import sql_com_class
+[Thu Aug 06 21:51:01.914898 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 192.99.31.122:59400] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:12:53.297005 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:12:53.297074 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:12:53.297202 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766] Traceback (most recent call last):
+[Thu Aug 06 22:12:53.297250 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:12:53.297262 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:12:53.297276 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:12:53.297286 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766]     import sql_com_class
+[Thu Aug 06 22:12:53.297315 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 186.96.254.138:43766] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:15:23.706585 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:15:23.706649 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:15:23.706762 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946] Traceback (most recent call last):
+[Thu Aug 06 22:15:23.706808 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:15:23.706819 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:15:23.706834 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:15:23.706843 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946]     import sql_com_class
+[Thu Aug 06 22:15:23.706869 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 180.149.125.153:45946] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:19:49.299860 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:19:49.299939 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:19:49.300065 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274] Traceback (most recent call last):
+[Thu Aug 06 22:19:49.300113 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:19:49.300125 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:19:49.300140 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:19:49.300150 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274]     import sql_com_class
+[Thu Aug 06 22:19:49.300178 2020] [wsgi:error] [pid 746:tid 139981932066560] [remote 66.249.69.147:57274] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:27:00.248879 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411] mod_wsgi (pid=746): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:27:00.248952 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411] mod_wsgi (pid=746): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:27:00.249077 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411] Traceback (most recent call last):
+[Thu Aug 06 22:27:00.249124 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:27:00.249135 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:27:00.249150 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:27:00.249159 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411]     import sql_com_class
+[Thu Aug 06 22:27:00.249187 2020] [wsgi:error] [pid 746:tid 139981965637376] [remote 66.249.69.145:62411] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:31:28.561076 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194] mod_wsgi (pid=1095): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:31:28.561130 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194] mod_wsgi (pid=1095): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:31:28.561333 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194] Traceback (most recent call last):
+[Thu Aug 06 22:31:28.561358 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:31:28.561364 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:31:28.561371 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:31:28.561375 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194]     import sql_com_class
+[Thu Aug 06 22:31:28.561390 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 173.79.18.195:55194] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:34:13.417060 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202] mod_wsgi (pid=1095): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:34:13.417137 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202] mod_wsgi (pid=1095): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:34:13.417272 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202] Traceback (most recent call last):
+[Thu Aug 06 22:34:13.417324 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:34:13.417337 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:34:13.417352 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:34:13.417362 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202]     import sql_com_class
+[Thu Aug 06 22:34:13.417391 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:57202] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:39:47.438329 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099] mod_wsgi (pid=1095): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:39:47.438405 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099] mod_wsgi (pid=1095): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:39:47.438530 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099] Traceback (most recent call last):
+[Thu Aug 06 22:39:47.438576 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:39:47.438588 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:39:47.438603 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:39:47.438612 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099]     import sql_com_class
+[Thu Aug 06 22:39:47.438640 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 170.254.151.218:50099] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:41:24.150871 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478] mod_wsgi (pid=1095): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:41:24.150934 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478] mod_wsgi (pid=1095): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:41:24.151050 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478] Traceback (most recent call last):
+[Thu Aug 06 22:41:24.151098 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:41:24.151110 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:41:24.151125 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:41:24.151134 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478]     import sql_com_class
+[Thu Aug 06 22:41:24.151162 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:46478] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:48:37.736321 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793] mod_wsgi (pid=1095): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:48:37.736386 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793] mod_wsgi (pid=1095): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:48:37.736504 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793] Traceback (most recent call last):
+[Thu Aug 06 22:48:37.736551 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:48:37.736563 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:48:37.736578 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:48:37.736587 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793]     import sql_com_class
+[Thu Aug 06 22:48:37.736614 2020] [wsgi:error] [pid 1095:tid 139981965637376] [remote 66.249.69.145:42793] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 22:55:48.110840 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945] mod_wsgi (pid=1095): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:55:48.110913 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945] mod_wsgi (pid=1095): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 22:55:48.111042 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945] Traceback (most recent call last):
+[Thu Aug 06 22:55:48.111090 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 22:55:48.111102 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 22:55:48.111118 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 22:55:48.111127 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945]     import sql_com_class
+[Thu Aug 06 22:55:48.111156 2020] [wsgi:error] [pid 1095:tid 139981932066560] [remote 66.249.69.145:35945] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 23:02:28.174305 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784] mod_wsgi (pid=1239): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:02:28.174358 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784] mod_wsgi (pid=1239): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:02:28.174563 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784] Traceback (most recent call last):
+[Thu Aug 06 23:02:28.174588 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 23:02:28.174594 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 23:02:28.174601 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 23:02:28.174605 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784]     import sql_com_class
+[Thu Aug 06 23:02:28.174619 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 89.248.174.166:37784] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 23:02:44.244640 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424] mod_wsgi (pid=1239): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:02:44.244705 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424] mod_wsgi (pid=1239): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:02:44.244828 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424] Traceback (most recent call last):
+[Thu Aug 06 23:02:44.244878 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 23:02:44.244891 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 23:02:44.244905 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 23:02:44.244914 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424]     import sql_com_class
+[Thu Aug 06 23:02:44.244941 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 173.79.18.195:56424] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 23:03:01.109989 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763] mod_wsgi (pid=1239): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:03:01.110059 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763] mod_wsgi (pid=1239): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:03:01.110188 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763] Traceback (most recent call last):
+[Thu Aug 06 23:03:01.110236 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 23:03:01.110248 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 23:03:01.110262 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 23:03:01.110271 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763]     import sql_com_class
+[Thu Aug 06 23:03:01.110300 2020] [wsgi:error] [pid 1239:tid 139981965637376] [remote 66.249.69.145:44763] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 23:10:12.092010 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821] mod_wsgi (pid=1239): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:10:12.092077 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821] mod_wsgi (pid=1239): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:10:12.092204 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821] Traceback (most recent call last):
+[Thu Aug 06 23:10:12.092252 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 23:10:12.092264 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 23:10:12.092279 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 5, in <module>
+[Thu Aug 06 23:10:12.092288 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821]     import sql_com_class
+[Thu Aug 06 23:10:12.092316 2020] [wsgi:error] [pid 1239:tid 139981932066560] [remote 66.249.69.145:53821] ModuleNotFoundError: No module named 'sql_com_class'
+[Thu Aug 06 23:11:10.895203 2020] [wsgi:error] [pid 1344:tid 139981965637376] [remote 173.79.18.195:57014] mod_wsgi (pid=1344): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:11:10.895240 2020] [wsgi:error] [pid 1344:tid 139981965637376] [remote 173.79.18.195:57014] mod_wsgi (pid=1344): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:11:10.895379 2020] [wsgi:error] [pid 1344:tid 139981965637376] [remote 173.79.18.195:57014] Traceback (most recent call last):
+[Thu Aug 06 23:11:10.895400 2020] [wsgi:error] [pid 1344:tid 139981965637376] [remote 173.79.18.195:57014]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 23:11:10.895406 2020] [wsgi:error] [pid 1344:tid 139981965637376] [remote 173.79.18.195:57014]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 23:11:10.895420 2020] [wsgi:error] [pid 1344:tid 139981965637376] [remote 173.79.18.195:57014] ModuleNotFoundError: No module named 'BlogApp'
+[Thu Aug 06 23:11:14.365239 2020] [wsgi:error] [pid 1344:tid 139981932066560] [remote 173.79.18.195:57016] mod_wsgi (pid=1344): Failed to exec Python script file '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:11:14.365298 2020] [wsgi:error] [pid 1344:tid 139981932066560] [remote 173.79.18.195:57016] mod_wsgi (pid=1344): Exception occurred processing WSGI script '/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi'.
+[Thu Aug 06 23:11:14.365399 2020] [wsgi:error] [pid 1344:tid 139981932066560] [remote 173.79.18.195:57016] Traceback (most recent call last):
+[Thu Aug 06 23:11:14.365443 2020] [wsgi:error] [pid 1344:tid 139981932066560] [remote 173.79.18.195:57016]   File "/var/www/FLASKAPPS/BlogApp/BlogApp.wsgi", line 8, in <module>
+[Thu Aug 06 23:11:14.365455 2020] [wsgi:error] [pid 1344:tid 139981932066560] [remote 173.79.18.195:57016]     from BlogApp.WebBlogApp import app as application
+[Thu Aug 06 23:11:14.365484 2020] [wsgi:error] [pid 1344:tid 139981932066560] [remote 173.79.18.195:57016] ModuleNotFoundError: No module named 'BlogApp'
+[Thu Aug 06 23:13:18.599854 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024] ERROR:WebBlogApp:Exception on / [GET]
+[Thu Aug 06 23:13:18.599887 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024] Traceback (most recent call last):
+[Thu Aug 06 23:13:18.599896 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+[Thu Aug 06 23:13:18.599903 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     response = self.full_dispatch_request()
+[Thu Aug 06 23:13:18.599909 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+[Thu Aug 06 23:13:18.599916 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     rv = self.handle_user_exception(e)
+[Thu Aug 06 23:13:18.599922 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+[Thu Aug 06 23:13:18.599928 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     reraise(exc_type, exc_value, tb)
+[Thu Aug 06 23:13:18.599935 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/usr/local/lib/python3.7/dist-packages/flask/_compat.py", line 39, in reraise
+[Thu Aug 06 23:13:18.599941 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     raise value
+[Thu Aug 06 23:13:18.599947 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+[Thu Aug 06 23:13:18.599954 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     rv = self.dispatch_request()
+[Thu Aug 06 23:13:18.599977 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+[Thu Aug 06 23:13:18.599984 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     return self.view_functions[rule.endpoint](**req.view_args)
+[Thu Aug 06 23:13:18.599990 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/var/www/FLASKAPPS/BlogApp/WebBlogApp.py", line 46, in home
+[Thu Aug 06 23:13:18.599996 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     data.connect()
+[Thu Aug 06 23:13:18.600001 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]   File "/var/www/FLASKAPPS/BlogApp/sql_com_class.py", line 24, in connect
+[Thu Aug 06 23:13:18.600007 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024]     database="blog_posts"
+[Thu Aug 06 23:13:18.600013 2020] [wsgi:error] [pid 1478:tid 139981965637376] [remote 173.79.18.195:57024] mariadb.ProgrammingError: Access denied for user 'blog'@'localhost'
