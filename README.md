@@ -28,3 +28,21 @@ Disable default virtual host and enable BlogApp.conf
 Restart apache server to activate new virtual site
 
 	$ sudo systemctl restart apache2
+
+## Preping mysql (mariadb)
+
+Create databse
+
+	$ CREATE DATABASE 'blog_posts';
+	$ SHOW DATABASES;
+
+Create database user
+
+	$ CREATE USER 'blog'@localhost IDENTIFIED BY 'enter password';
+	$ SELECT User FROM mysql.user;
+
+Change privilages on user to access database
+
+	$ GRANT ALL PRIVILEGES ON blog_posts.* TO 'blog'@localhost;
+	$ FLUSH PRIVILEGES;
+	$ SHOW GRANTS FOR 'blog'@localhost;
