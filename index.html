@@ -1,0 +1,36 @@
+<h1>website</h1>
+<p>Repository for managing arthurshmidt.com and its development.</p>
+<h2>Implementation thoughts</h2>
+<p>Combine Python, HTML, CSS, Javascript, and SQL to manage the webpage.  All blogging content to be stored in an SQL database.  I will first try and use Flask as the initial implementation and possibly migrate to Django.</p>
+<h2>Installing apache and flask</h2>
+<p>Install Flask</p>
+<pre><code>$ sudo pip3 install Flask
+</code></pre>
+<h2>Preping Apache for Flask</h2>
+<p>Install mod_wsgi</p>
+<pre><code>$ apt-get install libapache2-mod-wsgi-py3
+</code></pre>
+<p>Add wsgi to virtual host</p>
+<pre><code>$ cp /var/www/FLASHAPPS/BlogApp/other/BlogApp.conf /etc/apache2/sites-available/BlogApp.conf
+</code></pre>
+<p>Disable default virtual host and enable BlogApp.conf</p>
+<pre><code>$ sudo a2dissite 000-default.conf
+$ sudo a2ensite BlogApp.conf
+</code></pre>
+<p>Restart apache server to activate new virtual site</p>
+<pre><code>$ sudo systemctl restart apache2
+</code></pre>
+<h2>Preping mysql (mariadb)</h2>
+<p>Create databse</p>
+<pre><code>$ CREATE DATABASE 'blog_posts';
+$ SHOW DATABASES;
+</code></pre>
+<p>Create database user</p>
+<pre><code>$ CREATE USER 'blog'@localhost IDENTIFIED BY 'enter password';
+$ SELECT User FROM mysql.user;
+</code></pre>
+<p>Change privilages on user to access database</p>
+<pre><code>$ GRANT ALL PRIVILEGES ON blog_posts.* TO 'blog'@localhost;
+$ FLUSH PRIVILEGES;
+$ SHOW GRANTS FOR 'blog'@localhost;
+</code></pre>
