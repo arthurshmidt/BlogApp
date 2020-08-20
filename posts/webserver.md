@@ -19,6 +19,29 @@ In order to meet the goals of the project I landed on the following:
 
 ## OS setup
 
+This is fairly simple process.  The Debian installer works very well.  Since this is a just a server, I do not need any graphical front end, thus I installed just the basic install.  
+
+### Setting up the Static IP
+
+Once the basic install was completed, I had to create the static ip so that I could direct my firewall routing to the correct computer.  
+
+In the /etc/network/interfaces file modified the following:
+
+	> # The primary network interface
+	> allow-hotplug eth0
+	> iface eth0 inet dhcp
+
+to become:
+
+	> # The primary network interface
+	> allow-hotplug eth0
+	> iface eth0 inet static
+	>	address 192.168.1.2
+	> 	gateway 192.168.1.1
+	> 	netmask 255.255.255.0
+	> 	network 192.168.1.0
+	>	broadcast 192.168.1.255
+
 ## Preping the Apache webserver
 
 In order to prep the web server we need to configure apache to accept Flask.  This
