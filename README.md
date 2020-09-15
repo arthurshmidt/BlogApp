@@ -46,3 +46,23 @@ Change privilages on user to access database
 	$ GRANT ALL PRIVILEGES ON blog_posts.* TO 'blog'@localhost;
 	$ FLUSH PRIVILEGES;
 	$ SHOW GRANTS FOR 'blog'@localhost;
+
+## Git & Flask integration with Apache
+
+### Apache Files
+Apache locates its files in the /var/www directory. By default the "Default" files are locatedin /var/www/html.   With the Flask implementation I have removed the html directory and create a FLASKAPPS directory, where all flask applications will be stored.  
+
+Apache allows for multiple websites through apache virtualization.  In order to do this, you designate the VirtualHost in /etc/apache2/sites-available and /etc/apache2/sites-enabled. Prior to enabling a site, you will need to disable the default webpage.  This will most likely be the 000-default.conf in /etc/apache2/sites-available.
+
+    $ a2ensite <website>
+    $ a2dissite <website>
+
+Example: if you have have NewWebSite.conf in the /etc/apache2/sites-available the commands would be
+
+    $ a2ensite NewWebSite
+    $ a3dissite NewWebSite
+
+    ** no path is required.  Apached assumes the /etc/apache2/sites-available directory.
+
+### Flask Files
+
